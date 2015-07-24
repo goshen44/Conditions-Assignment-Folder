@@ -29,9 +29,26 @@ if (preferredTime === true) {
 
 var movieType    = prompt("There are two ways to see the movie, either IMAX or 3D. \n Please enter which you would rather see");
 if (movieType === "IMAX") {
+    //code that runs if you want to see the IMAX movie
     console.log("Tickets are still available, and you get to see the movie the way you wanted to!");
 } else if (movieType === "3D") {
+    //code that runs, if you get stuck watching it in 3D
     console.log("Shucks, well atleast you still get to see the movie.");
 } else {
+    //code that runs if you enter nothing
     console.log ("There's only two ways to watch the movie, How do you plan on watching it then?");
 }
+
+var concessions = prompt(" Do you want to go to the Concession Stand and buy anything? \n Please enter: Yes or No");
+if (concessions === "Yes") {
+    //Code that runs if you want to go to the concession stand
+    console.log("That popcorn looks good, I'll take a Large!");
+} else if (concessions === "No"){
+    //Code that runs if you don't want any delicious snacks from the concessions stand
+    console.log("Your right, we don't need any snacks, let's go get a good seat!");
+} else {
+    //code that runs if you don't enter anything
+    console.log("You really only have two choices here, PAL!");
+}
+
+
