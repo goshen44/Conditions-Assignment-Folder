@@ -33,7 +33,7 @@ if (movieType === "IMAX") {
     console.log("Tickets are still available, and you get to see the movie the way you wanted to!");
 } else if (movieType === "3D") {
     //code that runs, if you get stuck watching it in 3D
-    console.log("Shucks, well atleast you still get to see the movie.");
+    console.log("Shucks, well at least you still get to see the movie.");
 } else {
     //code that runs if you enter nothing
     console.log ("There's only two ways to watch the movie, How do you plan on watching it then?");
@@ -41,14 +41,24 @@ if (movieType === "IMAX") {
 
 var concessions = prompt(" Do you want to go to the Concession Stand and buy anything? \n Please enter: Yes or No");
 if (concessions === "Yes") {
-    //Code that runs if you want to go to the concession stand
+    //Code that runs if you want to go to the concession stand and get some splendid treats
     console.log("That popcorn looks good, I'll take a Large!");
 } else if (concessions === "No"){
     //Code that runs if you don't want any delicious snacks from the concessions stand
     console.log("Your right, we don't need any snacks, let's go get a good seat!");
 } else {
-    //code that runs if you don't enter anything
+    //code that runs if you decide not to enter anything
     console.log("You really only have two choices here, PAL!");
 }
+//It's time to walk into the movie, now your looking where to sit!
+//There's two of you so you need two seats together, not two separate ones.
 
-
+var seats= 2;
+//If you sit in the front there's no seats together and will have to sit apart, the back has plenty of seats left to sit together
+/*if (seats < 1) {
+    console.log( "You Have to sit in apart in the front row");
+}else{
+    console.log(" You can sit in the back, next to each other!");
+}
+*/
+(seats < 1)? console.log( "You Have to sit in apart in the front row") :console.log(" You can sit in the back, next to each other!");
