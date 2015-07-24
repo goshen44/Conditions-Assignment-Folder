@@ -50,15 +50,35 @@ if (concessions === "Yes") {
     //code that runs if you decide not to enter anything
     console.log("You really only have two choices here, PAL!");
 }
+
+var budget= 12;
+var popcorn= 10;
+var foundExtraMoneyInSock = true;
+
+//if the price of the popcorn is less than our budget AND if we found extra money in our sock we can also buy a soda
+
+if(popcorn < budget || foundExtraMoneyInSock===true){
+    console.log("We can buy the popcorn and maybe a soda.");
+} else {
+    console.log ("Your going to be mighty thirsty without a drink!");
+}
+
 //It's time to walk into the movie, now your looking where to sit!
 //There's two of you so you need two seats together, not two separate ones.
 
+
 var seats= 2;
 //If you sit in the front there's no seats together and will have to sit apart, the back has plenty of seats left to sit together
-/*if (seats < 1) {
-    console.log( "You Have to sit in apart in the front row");
+if (seats < 1) {
+    console.log( "You Have to sit apart in the front row");
 }else{
-    console.log(" You can sit in the back, next to each other!");
+    console.log("You can sit in the back, next to each other!");
 }
-*/
-(seats < 1)? console.log( "You Have to sit in apart in the front row") :console.log(" You can sit in the back, next to each other!");
+
+(seats > 1)? console.log( "You Have to sit apart in the front row") : console.log(" You can sit in the back, next to each other!");
+
+//Time to sit down, cuddle up, and enjoy the movie together!
+console.log("It's time to buckle up our seat belts, strap in and enjoy the movie" + " " + movie + " " + "together!");
+
+
+
